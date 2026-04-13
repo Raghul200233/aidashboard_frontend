@@ -10,7 +10,7 @@ const LoadingSkeleton = () => (
 
     {/* AI response placeholder */}
     <div className="skeleton-bubble ai">
-      <div className="chat-avatar ai-avatar" style={{ opacity: 0.4 }}>AI</div>
+      <div className="chat-avatar ai-avatar" style={{ opacity: 0.4, fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', letterSpacing:'-1px' }}>&gt;_</div>
       <div className="skeleton-ai-card">
         <div className="skeleton-insight">
           <div className="skeleton-icon" />
