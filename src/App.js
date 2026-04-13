@@ -170,9 +170,9 @@ function App() {
                 {history.length === 0 && !loading ? (
                   <div className="chat-empty">
                     <div className="chat-empty-icon">
-                      <MessageSquare size={26} color="var(--indigo-light)" />
+                      <MessageSquare size={24} color="var(--indigo-l)" />
                     </div>
-                    <p className="chat-empty-title">Ask about <strong style={{color:'var(--indigo-light)'}}>{fileName}</strong></p>
+                    <p className="chat-empty-title">Ask about <strong style={{color:'var(--indigo-l)'}}>{fileName}</strong></p>
                     <p>Use the suggestion chips below or try one of these:</p>
                     <div className="chat-empty-hints">
                       {['📊 Top 5 by sales', '📈 Show trend over time', '🍕 Distribution by category'].map(h => (
