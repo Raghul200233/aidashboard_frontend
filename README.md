@@ -103,27 +103,6 @@ npm start
 
 text
 http://localhost:3000
-📖 Usage Guide
-Step 1: Upload Your CSV
-Click the upload button and select any CSV file.
-
-Step 2: Ask Questions
-Type your question in natural language:
-
-text
-✅ "How many rows are in the dataset?"
-✅ "What is the total revenue?"
-✅ "Show top 5 products by profit as bar chart"
-✅ "How many cancelled orders in South region?"
-✅ "What is the average price of Dress products?"
-✅ "Compare ORD50 and ORD75"
-✅ "Show distribution of order status as pie chart"
-✅ "What is the profit margin percentage?"
-✅ "Is there a correlation between price and quantity?"
-✅ "Predict next month's revenue"
-✅ "Orders from North OR South region"
-Step 3: Get Instant Answers
-The system responds with text answers or automatic charts.
 
 🧠 How It Works
 text
@@ -138,99 +117,31 @@ text
 │   Answer    │     │   Query     │     │  Question   │
 └─────────────┘     └─────────────┘     └─────────────┘
 Upload CSV → System reads and stores data
-
 Column Detection → Auto-identifies numeric, date, categorical columns
-
 Profile Building → Extracts unique values, min/max, averages
-
 Question Parsing → NLP identifies intent, columns, filters
-
 Query Execution → SmartAnalyzer routes to appropriate handler
-
 Response Generation → Returns text answer or chart
 
-📊 Supported Question Patterns
-Pattern	Example	Response
-Count	"How many products?"	Text
-List	"List all regions"	Text
-Total	"Total revenue"	Text
-Average	"Average profit"	Text
-Top/Bottom	"Top 5 by sales"	Bar Chart
-Distribution	"Order status distribution"	Pie Chart
-Trend	"Revenue over time"	Line Chart
-Compare	"Compare North vs South"	Bar Chart
-Filter	"Cancelled orders"	Text
-Multi-Filter	"Cash orders in North"	Text
-OR Logic	"North OR South region"	Text
-Record Lookup	"Show me ORD50"	Text
-Compare Records	"Compare ORD5 and ORD80"	Table
-Profit Margin	"What is profit margin?"	Text
-Correlation	"Correlation between X and Y"	Scatter
-Forecast	"Predict next month"	Line Chart
-Text Search	"Contains 'Dress'"	Text
-🎯 Example Questions for Different Datasets
-📊 Sales Dataset
-text
-- "Top 5 products by revenue"
-- "Total profit in South region"
-- "Average discount by product category"
-- "Show distribution of payment methods as pie chart"
-🏥 Healthcare Dataset
-text
-- "Average patient age"
-- "Number of patients with diabetes"
-- "Show distribution of blood types"
-- "Correlation between age and cholesterol level"
-👔 HR Dataset
-text
-- "Total employees by department"
-- "Average salary in Engineering"
-- "Highest paid employee"
-- "Show distribution of employment types"
-📦 Inventory Dataset
-text
-- "Total stock value by warehouse"
-- "Products with low stock (below 10)"
-- "Top 5 most expensive products"
-- "Show distribution of product categories"
 🤝 Contributing
 Contributions are welcome!
-
 Fork the repository
-
 Create a feature branch (git checkout -b feature/AmazingFeature)
-
 Commit your changes (git commit -m 'Add some AmazingFeature')
-
 Push to the branch (git push origin feature/AmazingFeature)
-
 Open a Pull Request
 
 📝 Roadmap
 Support for Excel files (.xlsx, .xls)
-
 Database connections (MySQL, PostgreSQL)
-
 Export results as CSV/PDF
-
 Save and share queries
-
 Multi-file joins
-
 More chart types (heatmap, histogram, box plot)
-
-🙏 Acknowledgments
-Labmentix for the internship opportunity and guidance
-
-Hugging Face for providing accessible AI inference
-
-Open Source Community for inspiration and libraries
 
 📧 Contact
 Raghul
-
 GitHub: https://github.com/Raghul200233
-
 Project Link: https://github.com/Raghul200233/ai-data-dashboard
 
 ⭐ Show Your Support
