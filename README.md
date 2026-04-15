@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# 🚀 AI-Powered Data Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📊 Ask Questions. Get Insights. No SQL Required.
 
-## Available Scripts
+[![Node.js](https://img.shields.io/badge/Node.js-18.x-green.svg)](https://nodejs.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-In the project directory, you can run:
+An intelligent data dashboard that lets you upload any CSV file and ask questions in plain English. The system understands your data structure automatically and provides instant answers with visualizations.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ **Demo**
+User: "What is the total revenue?"
+AI: Total Revenue: $542,891.47
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+User: "Show top 5 products by revenue as bar chart"
+AI: [Generates bar chart automatically]
 
-### `npm test`
+User: "Compare ORD5 and ORD80"
+AI: [Shows side-by-side comparison table]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+User: "What is the profit margin percentage?"
+AI: Average Profit Margin: 32.5%
 
-### `npm run build`
+User: "Is there a correlation between price and quantity?"
+AI: Correlation: -0.42 (moderate negative relationship)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+text
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔥 **Key Features**
 
-### `npm run eject`
+| Category | Features |
+|----------|----------|
+| **Natural Language** | Ask anything about your data in plain English |
+| **20+ Question Types** | Count, List, Total, Average, Top/Bottom, Distribution, Trend, Compare, Filter, Multi-Condition, OR Logic, Record Lookup, Compare Records, Profit Margin, Correlation, Forecast, Text Search, Time Intelligence, Quarter Analysis |
+| **Auto Visualizations** | Bar charts, Pie charts, Line charts, Scatter plots |
+| **Smart Understanding** | Auto-detects column types, builds profiles, matches synonyms |
+| **Any Dataset** | Works with sales, healthcare, HR, inventory, finance data |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ **Tech Stack**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Technology | Purpose |
+|------------|---------|
+| **Node.js** | Backend runtime |
+| **Express.js** | API server |
+| **Hugging Face Inference** | AI/NLP for intent parsing |
+| **Vanilla JS, HTML, CSS** | Frontend interface |
+| **CSV Parser** | Data ingestion |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📁 **Project Structure**
+ai-data-dashboard/
+├── server.js # Main server entry point
+├── routes/
+│ ├── upload.js # File upload handling
+│ └── analysis.js # Query processing API
+├── utils/
+│ └── analyzer.js # Smart query analyzer (20+ patterns)
+├── services/
+│ └── aiService.js # Hugging Face AI integration
+├── public/
+│ ├── index.html # Dashboard UI
+│ ├── style.css # Styling
+│ └── script.js # Frontend logic
+├── uploads/ # Temporary CSV storage
+└── package.json
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+text
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🚀 **Getting Started**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Prerequisites
+- Node.js (v18 or higher)
+- Hugging Face API Key (free tier works)
 
-### Analyzing the Bundle Size
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**1. Clone the repository**
+```bash
+git clone https://github.com/Raghul200233/ai-data-dashboard.git
+cd ai-data-dashboard
+2. Install dependencies
 
-### Making a Progressive Web App
+bash
+npm install
+3. Set up environment variables
+Create a .env file in the root directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+env
+HF_API_KEY=your_huggingface_api_key_here
+PORT=3000
+4. Run the application
 
-### Advanced Configuration
+bash
+npm start
+5. Open your browser
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+text
+http://localhost:3000
 
-### Deployment
+🧠 How It Works
+text
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   Upload    │────▶│   Analyze   │────▶│   Build     │
+│    CSV      │     │   Columns   │     │  Profiles   │
+└─────────────┘     └─────────────┘     └─────────────┘
+                                              │
+                                              ▼
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   Return    │◀────│   Execute   │◀────│   Parse     │
+│   Answer    │     │   Query     │     │  Question   │
+└─────────────┘     └─────────────┘     └─────────────┘
+Upload CSV → System reads and stores data
+Column Detection → Auto-identifies numeric, date, categorical columns
+Profile Building → Extracts unique values, min/max, averages
+Question Parsing → NLP identifies intent, columns, filters
+Query Execution → SmartAnalyzer routes to appropriate handler
+Response Generation → Returns text answer or chart
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+📝 Roadmap
+Support for Excel files (.xlsx, .xls)
+Database connections (MySQL, PostgreSQL)
+Export results as CSV/PDF
+Save and share queries
+Multi-file joins
+More chart types (heatmap, histogram, box plot)
+User accounts and query history
 
-### `npm run build` fails to minify
+⭐ Show Your Support
+If this project helped you, please give it a ⭐ on GitHub!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📄 License
+This project is licensed under the MIT License.
+Made with ❤️ by Raghul | AI-Powered Data Dashboard
